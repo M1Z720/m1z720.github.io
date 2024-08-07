@@ -1,0 +1,293 @@
+<html>
+<head>
+<link rel="shortcut icon" href="http://i.hizliresim.com/wj2RLg.gif">
+<script>
+function tb5_makeArray(n){ this.length = n; return this.length;
+}
+tb5_messages = new tb5_makeArray(2);
+tb5_messages[0] = "[!] Hacked By Virus 32 [!]";
+tb5_messages[1] = "[!] Security Low [!]";
+tb5_rptType = 'infinite';
+tb5_rptNbr = 10;
+tb5_speed = 50;
+tb5_delay = 2000;
+var tb5_counter=1;
+var tb5_currMsg=0;
+var tb5_stsmsg="";
+function tb5_shuffle(arr){
+var k;
+for (i=0; i<arr.length; i++){ k = Math.round(Math.random() * (arr.length - i - 1)) + i; temp = arr[i];arr[i]=arr[k];arr[k]=temp;
+}
+return arr;
+}
+tb5_arr = new tb5_makeArray(tb5_messages[tb5_currMsg].length);
+tb5_sts = new tb5_makeArray(tb5_messages[tb5_currMsg].length);
+for (var i=0; i<tb5_messages[tb5_currMsg].length; i++){ tb5_arr[i] = i; tb5_sts[i] = "_";
+}
+tb5_arr = tb5_shuffle(tb5_arr);
+function tb5_init(n){
+var k;
+if (n == tb5_arr.length){ if (tb5_currMsg == tb5_messages.length-1){ if ((tb5_rptType == 'finite') && (tb5_counter==tb5_rptNbr)){ clearTimeout(tb5_timerID); return; } tb5_counter++; tb5_currMsg=0; } else{ tb5_currMsg++; } n=0; tb5_arr = new tb5_makeArray(tb5_messages[tb5_currMsg].length); tb5_sts = new tb5_makeArray(tb5_messages[tb5_currMsg].length); for (var i=0; i<tb5_messages[tb5_currMsg].length; i++){ tb5_arr[i] = i; tb5_sts[i] = "_"; } tb5_arr = tb5_shuffle(tb5_arr); tb5_sp=tb5_delay;
+}
+else{ tb5_sp=tb5_speed; k = tb5_arr[n]; tb5_sts[k] = tb5_messages[tb5_currMsg].charAt(k); tb5_stsmsg = ""; for (var i=0; i<tb5_sts.length; i++) tb5_stsmsg += tb5_sts[i]; document.title = tb5_stsmsg; n++; } tb5_timerID = setTimeout("tb5_init("+n+")", tb5_sp);
+}
+function tb5_randomizetitle(){ tb5_init(0);
+}
+tb5_randomizetitle();
+</script><title> Hacked By Virus32 </title><title>[+] [ HE HE ] [+]</title><title>_+_ Hacked By Virus32[+_</title>
+<link rel="shortcut icon" type="image/gif" href="http://www.goodlightscraps.com/content/i_love_you/i_love_u_25.gif" />
+<meta name="Author" content="Drac-101code at http://www.wars-defacer.com">
+<meta http-equiv="imagetoolbar" content="no">
+<style type="text/css">
+	html {
+		overflow: hidden;
+	}
+body {
+    background-color: #000000;
+    background-image: url("http://i.hizliresim.com/9pZ9v9.jpg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    width:100%
+	}
+	#container {
+		position: absolute;
+		background: URL("http://www.dhteumeuleu.com/images/fondDechire.jpg");
+		left: 50%;
+		top: 50%;
+		width: 640px;
+		height: 360px;
+		margin-left: -320px;
+		margin-top: -180px;
+		overflow: hidden;
+		font-size: 1em;
+		box-shadow: 10px 10px 5px #999;
+	}
+	#inkp1 {
+		position: absolute;
+		top: 55px;
+		left: 10px;
+	}
+	#inkp2 {
+		position: absolute;
+		top: 55px;
+		left: 10px;
+		visibility: hidden;
+	}
+	#sound {
+		position: absolute;
+		right: 15px;
+		bottom: 15px;
+		cursor: pointer;
+	}
+	#typewriter {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+	}
+	#resources {
+		display:none;
+	}
+</style>
+<script type="text/javascript">
+"use strict";
+(function () {
+	var t = "", p = 0, c = "", cc = "", mm = "<span>";
+	var cl = 0, mr = "<br><br>", context, inkFreq, spdInk, mute = false;
+	var $ = function (id) {
+		return document.getElementById(id);
+	}
+	var init = function (data) {
+		context = $(data.context);
+		inkFreq = data.inkFreq;
+		spdInk = data.spdInk;
+		t = $(data.text).innerHTML;
+		c = "&nbsp;<img src='" + $("cursor").src + "' style='position:absolute'>" + mr;
+		run();
+		$("write").play();
+		$("sound").addEventListener('click', function () {
+			mute = !mute;
+			if (mute) {
+				$("sound").style.opacity = "0.3";
+				$("music").pause();
+			} else {
+				$("sound").style.opacity = "1";
+				$("music").play();
+			}
+			}, false);
+	}
+	var run = function () {
+		var m = t.charAt(p);
+		var tmp = 32;
+		if (m == "") cc = mr;
+		else if (m == "|") {
+			m = "";
+			mm = mm.substring(0, mm.length-1);
+			tmp = 64;
+		} else if (m == "<") {
+			var av = t.indexOf(">", p);
+			m = t.substring(p, av + 1);
+			p = av;
+		} else if (m == "&") {
+			var av = t.indexOf(";", p);
+			m = t.substring(p, av + 1);
+			p = av;
+		} else if (m == ".") tmp = 250;	
+		else if (m == ",") tmp = 100; 
+		else if (m == " ") tmp = 32; 
+		else if (p > 10) cc = c;		
+		if (m == " ") {
+			cl += spdInk;
+			m = '</span><span style="color:RGB(' + (cl) + ',' + (cl) + ',' + (cl) + ')">' + m;
+			if (cl < 40 && Math.random() > inkFreq)
+				m += ' <img src = "' + $("ink").src + '" align = "absmiddle"> ';
+		}
+		if ($("inkp2").style.visibility == "visible") {
+			cc = c;
+			$("inkp2").style.visibility = "hidden";
+			$("reload").pause();
+			$("write").play();
+			m = '</span><span style="color:RGB(0,0,0)">' + m;
+		}
+		if (cl > 180) {
+			cl = 0;
+			$("inkp2").style.visibility = "visible";
+			$("reload").play();
+			$("write").pause();
+			tmp = 1000;
+			cc = mr;
+		}	
+		mm += m;
+		if (p == t.length - 1) cc = mr;
+		context.innerHTML = mm + cc;
+		context.scrollTop = 100000;
+		p++;
+		if (p < t.length) setTimeout(run, 32 + tmp);
+		else {
+			$("reload").pause();
+			$("write").pause();
+			context.style.overflow = "auto";
+		}
+	}
+	return {    
+		load : function (data) {
+			window.addEventListener('load', function () {
+				setTimeout(function () {
+					init(data);
+				}, 500);
+			}, false);
+		}
+	}
+})().load({
+	text: "text",
+	context: "typewriter",
+	inkFreq: 0.7,
+	spdInk: 12
+});
+</script>
+</head>
+<br>
+
+<body>
+<div id="container">
+	<div id="typewriter"></div>
+	<img id="inkp1" src="http://www.dhteumeuleu.com/images/encrier.gif" alt="">
+	<img id="inkp2" src="http://www.dhteumeuleu.com/images/encrierplume.gif" alt="">
+	<img id="sound" src="http://www.dhteumeuleu.com/images/speaker_silent_32.png" alt="">
+</div>
+<div id="resources">
+	<img id="ink" src="http://www.dhteumeuleu.com/images/tache.gif" alt="">
+	<img id="cursor" src="http://www.dhteumeuleu.com/images/plumeBouge.gif" alt="">
+	<div id="text">
+		<div style="margin: 1em;margin-left:100px;font-style:italic;font-family:Comic Sans MS;font-size:1em;">
+
+			                [+]--In The Name Of God--[+]  
+			<br><br>
+			Hacked By [+]--Virus32--[+] And [+]--Ehsan-Monkerati--[+]<br> We are Anonymous The Best [+]-Hacker-[+]<br>
+			We Are The Real Brothers.
+			<br>
+			The Enemy Does Not Like.
+			<br>
+			The Enemy Is Not Our Knees..<br>
+			
+                         We Love Iran And We Will Fight To The<br>
+                         Last Drop..<br>
+                         And no person not as strong Iranian hackers..<br>
+                         Ah this is why he writes..<br>
+                         At The End Of The !!!$tory!!!<br>
+                         Hacked By : [+]--Virus32--[+]<br>
+                         [+]--Security Low--[+]
+		[+]--Dont Forget We--[+]
+		</div>
+	</div>
+</div>
+<audio id="write" preload="auto" loop>
+	<source src="http://www.dhteumeuleu.com/sound/plume.mp3" type="audio/mpeg">
+	<source src="http://www.dhteumeuleu.com/sound/plume.ogg" type="audio/ogg">
+</audio>
+<audio id="reload" preload="auto" loop>
+	<source src="http://www.dhteumeuleu.com/sound/pop.mp3" type="audio/mpeg">
+	<source src="http://www.dhteumeuleu.com/sound/pop.ogg" type="audio/ogg">
+</audio>
+<audio id="music" preload="none" loop autoplay>
+	<source src="http://hn7.asset.aparat.com/aparat-video/2e978358fa6aa5e41f1f20fecce80da11530550.mp4" type="audio/mpeg">
+	<source src="http://hn7.asset.aparat.com/aparat-video/2e978358fa6aa5e41f1f20fecce80da11530550.mp4" type="audio/ogg">
+</audio>
+<img style="visibility:hidden;width:0px;height:0px;" border=0 width=0 height=0 src="http://c.gigcount.com/wildfire/IMP/CXNID=2000002.0NXC/bT*xJmx*PTEzNDgzOTQyNzcxMjUmcHQ9MTM*ODM5NDMzNTA2MiZwPTEzNzkyMSZkPSZnPTEmbz1lNDM1NjMyNTA1ZDE*ODhlOWVh/NjBmZmUyOTcyYmVmZiZvZj*w.gif" />  <center><embed src="http://www.musicdumper.com/soundlister/player/player.swf?file=http://www.4shared.com/embed/487028039/72ce44cf/preview.swf&image=http://www.musicdumper.com/lg.jpg&repeat=always&autostart=true&frontcolor=cccccc&lightcolor=428cdb&backcolor=111111" width="0" height="0" allowscriptaccess="always"></embed>
+  <br /><small><a href="http://www.musicdumper.com/" target="_blank"></a></small></center>  
+<script type="text/javascript">
+new TypingText(document.getElementById("example1"));
+new TypingText(document.getElementById("example2"), 50, function(i){
+var ar = new Array("_"," ","_"," "," "); return " " + ar[i.length %
+ar.length]; });
+TypingText.runAll();
+</script> 
+<script language="JavaScript1.2">
+function disableselect(e){
+return false
+}
+function reEnable(){
+return true
+}
+document.onselectstart=new Function (&quot;return false&quot;)
+if (window.sidebar){
+document.onmousedown=disableselect
+document.onclick=reEnable
+}
+</script> 
+<div style="position:absolute;top:0px;left:0px;z-index=100;font:30px cursive;font-weight:bold;color:white;">
+<script src='http://fantasyromantic.webs.com/jsfloatingbird.js' type='text/javascript'></script>
+</body>
+</html>
+<script language="JavaScript">
+function clickIE() {
+if (document.all) {
+return false;
+}
+}
+function clickNS(e) {
+if (document.layers||(document.getElementById&&!document.all)) {
+if (e.which==2||e.which==3) {
+return false;
+}
+}
+}
+if (document.layers) {
+document.captureEvents(Event.MOUSEDOWN);
+document.onmousedown=clickNS;
+}
+else{
+document.onmouseup=clickNS;
+document.oncontextmenu=clickIE;
+}
+document.oncontextmenu=new Function("return false")
+</script><script>
+/* g32 */
+document.onkeydown=function(event){
+	var MoisrexCharCodeMir=(event.which)?event.which:event.keyCode;
+	if(MoisrexCharCodeMir==85 && event.ctrlKey==true){
+		event.preventDefault();
+		return false;
+	}
+};
+</script>
