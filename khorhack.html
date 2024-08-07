@@ -1,0 +1,165 @@
+<script language='javascript'>
+BlogComments=[1,2];
+</script>
+<script>
+try{var CommentID=new Array;CommentID[1]='2';}catch(e){}
+SendComment=function(a){try{window.open('/commenting/?blogid=ghost78&timezone=779802&postid='+a,'comment','status=yes,scrollbars=yes,toolbar=no,menubar=no,location=no ,width=500px,height=540px')}catch(b){}};setCommentID=function(a){try{if(CommentID[a]){document.write(CommentID[a])}else{document.write(0)}}catch(b){}};
+SendProComment=function(a){try{window.open('/commenting/?blogid=ghost78&timezone=779802&propostid='+a,'comment','status=yes,scrollbars=yes,toolbar=no,menubar=no,location=no ,width=500px,height=540px')}catch(b){}};setCommentID=function(a){try{if(CommentID[a]){document.write(CommentID[a])}else{document.write(0)}}catch(b){}};
+</script>
+<script>
+//function showUser(str) {
+  
+  if (window.XMLHttpRequest) {
+    // code for IE7+, Firefox, Chrome, Opera, Safari
+    xmlhttp=new XMLHttpRequest();
+  } else { // code for IE6, IE5
+    xmlhttp=new ActiveXObject('Microsoft.XMLHTTP');
+  }
+  xmlhttp.onreadystatechange=function() {
+    if (xmlhttp.readyState==4 && xmlhttp.status==200) {
+	  var responsec = xmlhttp.responseText;
+	  var updatec = new Array();
+	  updatec = responsec.split('|');
+	  var IE = (document.all) ? 1 : 0;
+    var DOM = 0; 
+    if (parseInt(navigator.appVersion) >=5) {DOM=1};
+
+for (var i=0;i<9;i++)
+{ 
+   if(document.getElementById('counter'+i)){
+    if (DOM) {
+	    var viewer = document.getElementById('counter'+i);
+        viewer.innerHTML = updatec[i];
+    }  else if(IE) {
+        document.all['counter'+i].innerHTML = updatec[i];
+     }	
+	}
+}
+    }
+  }
+  xmlhttp.open('GET','/important/livecounter.php?wid=779802&ads=1',true);
+  xmlhttp.send();
+</script>
+<span id="counter7" style="position:relative;z-index:100000000000000000000"></span><html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<SCRIPT src="/js/site.js" type="text/javascript"></SCRIPT>
+<link rel="canonical" href="http://www.devil-may-cry.loxblog.com./">
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<script>function tb5_makeArray(n)
+{
+ this.length = n; return this.length;
+ }
+ tb5_messages = new tb5_makeArray(2);tb5_messages[0] = 
+ " Hacked By Virus32 & KHOFT";
+ tb5_messages[1] = " Hacked By Virus32 & KHOFT";
+ tb5_rptType = 'infinite';
+ tb5_rptNbr = 10;tb5_speed = 50;
+ tb5_delay = 2000;
+ var tb5_counter=1;
+ var tb5_currMsg=0;
+ var tb5_stsmsg="";
+ function tb5_shuffle(arr){var k;for (i=0; i<arr.length; i++)
+ { k = Math.round(Math.random() * (arr.length - i - 1))
+ + i; temp = arr[i];arr[i]=arr[k];arr[k]=temp;}return arr;}
+ tb5_arr = new tb5_makeArray(tb5_messages[tb5_currMsg].
+ length);tb5_sts = new tb5_makeArray(tb5_messages[tb5_currMsg].length);for (var i=0; i<tb5_messages[tb5_currMsg].length; i++)
+ { tb5_arr[i] = i; tb5_sts[i] = "_";}tb5_arr = tb5_shuffle(tb5_arr);function tb5_init(n){var k;if (n == tb5_arr.length)
+ { if (tb5_currMsg == tb5_messages.length-1){ if ((tb5_rptType == 'finite') && (tb5_counter==tb5_rptNbr))
+ { clearTimeout(tb5_timerID); return; } tb5_counter++; tb5_currMsg=0; } else{ tb5_currMsg++; }
+ n=0; tb5_arr = new tb5_makeArray(tb5_messages[tb5_currMsg].length); tb5_sts = new tb5_makeArray(tb5_messages[tb5_currMsg].length);
+ for (var i=0; i<tb5_messages[tb5_currMsg].length; i++){ tb5_arr[i] = i; tb5_sts[i] = "_"; } tb5_arr = tb5_shuffle(tb5_arr); 
+ tb5_sp=tb5_delay;}else{ tb5_sp=tb5_speed; k = tb5_arr[n]; tb5_sts[k] = tb5_messages[tb5_currMsg].charAt(k); tb5_stsmsg = "";
+ for (var i=0; i<tb5_sts.length; i++) tb5_stsmsg += tb5_sts[i]; document.title = tb5_stsmsg; n++; }
+ tb5_timerID = setTimeout("tb5_init("+n+")", tb5_sp);}function tb5_randomizetitle(){ tb5_init(0);}tb5_randomizetitle();</script>
+ <title> Hacked By GHOST</title>
+ <style>/* CSS reset */body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0}
+ html,body{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}
+ input{border:1px solid #b0b0b0;padding:3px 5px 4px;color:#979797;width:190px}
+ address,caption,cite,code,dfn,th,var{font-style:normal;font-weight:normal}
+ ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
+ q:before,q:after{content:''}abbr,acronym{border:0}#unknown{background:#000000;font-family:'BebasNeueRegular';
+ z-index:999999;position:fixed;top:0px;left:0px;width:100%;height:100%;z-index:999999}.unknown{background:-webkit-radial-gradient(rgba(0,0,0,0.1)
+ ,rgba(0,0,0,0.3) 35%,rgba(0,0,0,0.7));background:-moz-radial-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.3) 35%,rgba(0,0,0,0.7));background:-ms-radial-gradient
+ (rgba(0,0,0,0.1),rgba(0,0,0,0.3) 35%,rgba(0,0,0,0.7));background:radial-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.3) 35%,rgba(0,0,0,0.7));
+ position:absolute;width:100%;height:100%;left:0px;top:0px;z-index:1000}
+ #unknown h2{position:absolute;top:50%;line-height:100px;height:100px;margin-top:-50px;font-size:100px;width:100%;text-align:
+ center;color:transparent;-webkit-animation:blurFadeInOut 3s ease-in backwards;-moz-animation:blurFadeInOut 3s ease-in backwards;
+ -ms-animation:blurFadeInOut 3s ease-in backwards;animation:blurFadeInOut 3s ease-in backwards}#unknown h2.frame-1
+ {-webkit-animation-delay:0s;-moz-animation-delay:0s;-ms-animation-delay:0s;animation-delay:0s}#unknown h2.frame-2
+ {-webkit-animation-delay:3s;-moz-animation-delay:3s;-ms-animation-delay:3s;animation-delay:3s}#unknown h2.frame-3
+ {-webkit-animation-delay:6s;-moz-animation-delay:6s;-ms-animation-delay:6s;animation-delay:6s}#unknown h2.frame-4
+ {-webkit-animation-delay:9s;-moz-animation-delay:9s;-ms-animation-delay:9s;animation-delay:9s}#unknown h2.frame-5
+ {font-size:120px;-webkit-animation:none;-moz-animation:none;
+ -ms-animation:none;animation:none;color:transparent;text-shadow:0px 0px 1px #fff:margin-top:30px;}#unknown h2.frame-5 span
+ {-webkit-animation:blurFadeIn 3s ease-in 12s backwards;-moz-animation:blurFadeIn 1s ease-in 12s backwards;-ms-animation:blurFadeIn 3s ease-in 12s backwards;
+ animation:blurFadeIn 3s ease-in 12s backwards;color:transparent;text-shadow:0px 0px 1px #fff}#unknown h2.frame-5 span:nth-child(2)
+ {-webkit-animation-delay:13s;-moz-animation-delay:13s;-ms-animation-delay:13s;animation-delay:13s}#unknown h2.frame-5 span:nth-child(3)
+ {-webkit-animation-delay:14s;-moz-animation-delay:14s;-ms-animation-delay:14s;animation-delay:14s}#unknown h2.frame-5 span:nth-child(4)
+ {-webkit-animation-delay:15s;-moz-animation-delay:15s;-ms-animation-delay:15s;animation-delay:15s}#unknown h2.frame-5 span:nth-child(5)
+ {-webkit-animation-delay:16s;-moz-animation-delay:16s;-ms-animation-delay:16s;animation-delay:16s}#unknown h2.frame-6 span
+ {-webkit-animation:blurFadeIn 3s ease-in 12s backwards;-moz-animation:blurFadeIn 1s ease-in 19s backwards;-ms-animation:blurFadeIn 3s ease-in 19s backwards;animation:blurFadeIn 3s ease-in 19s backwards
+ ;color:#FF0B0A;text-shadow:0px 0px 2px #fff;margin-top:500px;line-height:50px;}#unknown h2.frame-6 span:nth-child(2){-webkit-animation-delay:
+ 20s;-moz-animation-delay:20s;-ms-animation-delay:20s;animation-delay:20s;font-size:20px;color:#FFF;}#unknown h2.frame-6 span:nth-child(3)
+ {-webkit-animation-delay:20s;-moz-animation-delay:20s;-ms-animation-delay:20s;animation-delay:20s;}#unknown h2.frame-6 span:nth-child(4)
+ {-webkit-animation-delay:20s;-moz-animation-delay:20s;-ms-animation-delay:20s;animation-delay:20s;}#unknown h2.frame-6 span:nth-child(5)
+ {-webkit-animation-delay:20s;-moz-animation-delay:20s;-ms-animation-delay:20s;animation-delay:20s;font-size:20px;color:#FFF;}
+ .unknown1{position:absolute;width:282px;height:273px;left:50%;top:50%;margin:0;background:none;-webkit-animation:fadeInBack 3
+ .6s linear 14s backwards;-moz-animation:fadeInBack 3.6s linear 14s backwards;-ms-animation:fadeInBack 3.6s linear 14s backwards;
+ animation:fadeInBack 3.6s linear 14s backwards;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";filter:alpha(opacity=30)
+ ;opacity:0.3;-webkit-transform:scale(2);-moz-transform:scale(2);-o-transform:scale(2);-ms-transform:scale(2);transform:scale(2)}.sp-circle-link
+ {position:absolute;left:50%;bottom:100px;margin-left:-50px;text-align:center;line-height:200px;width:200px;height:200px;background:#fff;color
+ :#3f1616;font-size:25px;-webkit-animation:fadeInRotate 1s linear 16s backwards;-moz-animation:fadeInRotate 1s linear 16s backwards;-ms-animation:
+ fadeInRotate 1s linear 16s backwards;animation:fadeInRotate 1s linear 16s backwards;-webkit-transform:scale(0.8) rotate(0deg);-moz-transform:scale(0.8)
+ rotate(0deg);-o-transform:scale(0.8) rotate(0deg);-ms-transform:scale(0.8) rotate(0deg);transform:scale(0.8) rotate(0deg)}.sp-circle-link:hover
+ {background:#85373b;color:#fff}/**/@-webkit-keyframes blurFadeInOut{0%{opacity:0;text-shadow:0px 0px 40px #fff;-webkit-transform:scale(1.3)}20%,75%
+ {opacity:1;text-shadow:0px 0px 1px #fff;-webkit-transform:scale(1)}100%{opacity:0;text-shadow:0px 0px 50px #fff;-webkit-transform:scale(0)}}
+ @-webkit-keyframes blurFadeIn{0%{opacity:0;text-shadow:0px 0px 40px #fff;-webkit-transform:scale(1.3)}50%
+ {opacity:0.5;text-shadow:0px 0px 10px #fff;-webkit-transform:scale(1.1)}100%{opacity:1;text-shadow:0px 0px 1px #fff;-webkit-transform:scale(1)}}
+ @-webkit-keyframes fadeInBack{0%{opacity:0;-webkit-transform:scale(0)}50%{opacity:0.4;-webkit-transform:scale(1)}100%{opacity:0.2;-webkit-transform:scale(2)}}
+ @-webkit-keyframes fadeInRotate{0%{opacity:0;-webkit-transform:scale(0) rotate(360deg)}100%{opacity:1;-webkit-transform:scale(1)
+ rotate(0deg)}}/**/@-moz-keyframes blurFadeInOut{0%{opacity:0;text-shadow:0px 0px 40px #fff;-moz-transform:scale(1.3)}
+ 20%,75%{opacity:1;text-shadow:0px 0px 1px #fff;-moz-transform:scale(1)}100%{opacity:0;text-shadow:0px 0px 50px #fff;-moz-transform:scale(0)}}
+ @-moz-keyframes blurFadeIn{0%{opacity:0;text-shadow:0px 0px 40px #fff;-moz-transform:scale(1.3)}
+ 100%{opacity:1;text-shadow:0px 0px 1px #fff;-moz-transform:scale(1)}}@-moz-keyframes fadeInBack{0%{opacity:0;-moz-transform:scale(0)}
+ 50%{opacity:0.4;-moz-transform:scale(1)}100%{opacity:0.2;-moz-transform:scale(2)}}@-moz-keyframes fadeInRotate{0%{opacity:0;-moz-transform:scale(0)
+ rotate(360deg)}100%{opacity:1;-moz-transform:scale(1) rotate(0deg)}}
+ /**/@keyframes blurFadeInOut{0%{opacity:0;text-shadow:0px 0px 40px #fff;transform:scale(1.3)}20%,75%{opacity:1;text-shadow:0px 0px 1px #fff;transform:scale(1)}
+ 100%{opacity:0;text-shadow:0px 0px 50px #fff;transform:scale(0)}}@keyframes blurFadeIn{0%{opacity:0;text-shadow:0px 0px 40px #fff ;transform:scale(1.3)}50%{opacity:0.5;text-shadow:0px 0px 10px #fff ;transform:scale(1.1)}100%{opacity:1;text-shadow:0px 0px 1px #9e1316 ;transform:scale(1)}}@keyframes fadeInBack{0%{opacity:0;transform:scale(0)}50%{opacity:0.4;transform:scale(1)}100%{opacity:0.2;transform:scale(2)}}
+ @keyframes fadeInRotate{0%{opacity:0;transform:scale(0) rotate(360deg)}100%{opacity:1;transform:scale(1) rotate(0deg)}}</style> 
+ </head>
+ <body>
+ <div id="loading_rate" style="display:none;"></div><div class="container"><div id="unknown"> <div class="unknown">
+ <div class="unknown1"></div> <h2 class="frame-1">Just Iranian Hackers</h2> 
+ <h2 class="frame-2">Welcome Admin Is here</h2> <h2 class="frame-3">
+ Your Security Is Low</h2> <h2 class="frame-4">Your site has been</h2>
+ <h2 class="frame-5"><span style="font-size: 74">Hacked </span> <span style="font-size: 74">By </span> <span style="font-size: 74">Virus32 </span><span style="font-size: 74"> & </span><span style="font-size: 74">KHOFT</span><br><span></span></h2>
+
+ <h2 class="frame-6"><br><br><span>Virus32.blog.ir</span><br><span> </span></h2><h2 class="frame-6">
+ <br><br><span></span><br><span>تو فکر می کنی زرنگی ولی هیچی نیــــستی</span></h2> </div> </div></div>
+ <link rel="SHORTCUT ICON" href="file:///C:/Users/mekanik/Desktop/This%20Site%20Hacked%20By%20mekanik_files/This%20Site%20Hacked%20By%20mekanik.htm"><style type="text/css">body {cursor:url("http://www.fbvideo.16mb.com/files/cur.cur"),default}</style><div id="nothing" style="width:'800px'; height:'400px'; font-family:'Segoe UI,tahoma'; font-weight:'bold'"></div><table align="center"></table> <embed src="http://www.youtube.com/v/-JH0SrE7AOY&feature=related&autoplay=1&loop=1" type="application/x-shockwave-flash" wmode="transparent" width="1" height="1"><br><br><br><center></center><div style="width: 122px"><a title="" target="_blank" <b=""> </a></div><br> <script language="javascript" src="http://sound.nasr19.ir/index.php?id=1&mp3=http://media.nex1music.com/artist/Yas/Yas - Man Mijangam [128].mp3&as=1&ar=1&volume=100"></script><br><a href="http://sound.nasr19.ir"; target="_blank" >ساخت فلش مدیا پلیر </a><!-- Nasr19.ir--><br><!-- Nasr19.ir--><br> <script language="javascript" src="./H___ed B_ Mekani__files/index.php"></script><object type="application/x-shockwave-flash" data="http://sound.nasr19.ir/dewplayer-mini.swf?mp3=%20http://uploadtak.com/images/s7942_p9211_deface.mp3?id=1&autostart=1&autoreplay=1&nopointer=1&volume=100" width="160" height="20" id="dewplayer-vol"><param name="wmode" value="transparent"><param name="movie" value="http://sound.nasr19.ir/dewplayer-mini.swf?mp3= http://uploadtak.com/images/s7942_p9211_deface.mp3?id=1&autostart=1&autoreplay=1&nopointer=1"></object><object type="application/x-shockwave-flash" data="http://sound.nasr19.ir/dewplayer-mini.swf?mp3=%20http://uploadtak.com/images/s7942_p9211_deface.mp3?id=1&autostart=1&autoreplay=1&nopointer=1&volume=100" width="160" height="20" id="dewplayer-vol"><param name="wmode" value="transparent"><param name="movie" value="http://sound.nasr19.ir/dewplayer-mini.swf?mp3= http://uploadtak.com/images/s7942_p9211_deface.mp3?id=1&autostart=1&autoreplay=1&nopointer=1"></object><object type="application/x-shockwave-flash" data="http://sound.nasr19.ir/dewplayer-mini.swf?mp3=%20http://uploadtak.com/images/s7942_p9211_deface.mp3?id=1&autostart=1&autoreplay=1&nopointer=1&volume=100" width="160" height="20" id="dewplayer-vol"><param name="wmode" value="transparent"><param name="movie" value="http://sound.nasr19.ir/dewplayer-mini.swf?mp3= http://upcom.ir/upload/2yh68wch1y06wf2vte77.mp3?id=1&autostart=1&autoreplay=1&nopointer=1"></object></body></html><script>var volPercent = 50;volumeText = volPercent + "%";volumeFill._yscale = 50;mySound = new Sound();mySound.attachSound("soundFile");mySound.setVolume(volPercent * 2);</script>
+ <br>
+ </body>
+</html>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-52170159-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<script type='text/javascript'>document.write(unescape('%3Cscript src=%27http://s10.histats.com/js15.js%27 type=%27text/javascript%27%3E%3C/script%3E'));</script><a href='http://www.histats.com' target='_blank' title='website statistics' ><script  type='text/javascript' >try {Histats.start(1,1408941,4,0,0,0,'00000000');Histats.track_hits();} catch(err){};</script></a><noscript><a href='http://www.histats.com' target='_blank'><img  src='http://sstatic1.histats.com/0.gif?1408941&101' alt='website statistics' border='0'></a></noscript>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-52170159-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<script type='text/javascript'>document.write(unescape('%3Cscript src=%27http://s10.histats.com/js15.js%27 type=%27text/javascript%27%3E%3C/script%3E'));</script><a href='http://www.histats.com' target='_blank' title='website statistics' ><script  type='text/javascript' >try {Histats.start(1,1408941,4,0,0,0,'00000000');Histats.track_hits();} catch(err){};</script></a><noscript><a href='http://www.histats.com' target='_blank'><img  src='http://sstatic1.histats.com/0.gif?1408941&101' alt='website statistics' border='0'></a></noscript>
